@@ -106,6 +106,17 @@ p{margin-bottom:8px;line-height:1.65}
 .tact{flex:1}
 .ttag{font-family:'DM Mono',monospace;font-size:9px;padding:2px 7px;border-radius:4px;background:var(--bg);border:1px solid var(--bd);color:var(--txd)}
 
+/* GROWING GUIDE */
+.gg-month{margin-bottom:28px}
+.gg-month-hdr{font-size:16px;font-weight:600;color:var(--txb);padding:10px 14px;border-radius:8px;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.gg-month-hdr .season{font-family:'DM Mono',monospace;font-size:10px;padding:2px 8px;border-radius:4px;text-transform:uppercase;letter-spacing:.5px}
+.gg-task{padding:10px 14px;border-left:3px solid var(--bd);margin-left:6px;margin-bottom:8px;font-size:13px;line-height:1.6;color:var(--txd)}
+.gg-task strong{color:var(--tx)}
+.gg-task .freq{font-family:'DM Mono',monospace;font-size:10px;color:var(--ac);display:inline-block;margin-bottom:4px}
+.gg-task .lazy{font-family:'DM Mono',monospace;font-size:10px;color:var(--warn);margin-left:8px}
+.gg-rule{background:var(--bg3);border:1px solid var(--bd);border-radius:8px;padding:12px 16px;font-size:13px;color:var(--txd);line-height:1.6;margin-bottom:16px}
+.gg-rule strong{color:var(--tx)}
+
 @media(max-width:768px){
   .nav-inner{gap:0} .tab{padding:12px 12px;font-size:12px}
   .page{padding:16px} .zone{min-height:38px} .zone .em{font-size:14px} .zone .zl{display:none}
@@ -121,6 +132,7 @@ p{margin-bottom:8px;line-height:1.65}
   <div class="tab" onclick="showPage('timeline')">Timeline</div>
   <div class="tab" onclick="showPage('shop')">Shopping List <span class="badge" id="shopBadge">0%</span></div>
   <div class="tab" onclick="showPage('fence')">Fence Build</div>
+  <div class="tab" onclick="showPage('guide')">Growing Guide</div>
 </div></div>
 
 <!-- ==================== BED LAYOUT ==================== -->
@@ -293,13 +305,218 @@ p{margin-bottom:8px;line-height:1.65}
 </div>
 </div>
 
+<!-- ==================== GROWING GUIDE ==================== -->
+<div class="page" id="pg-guide">
+
+<div class="card card-sm">
+  <h2>Season-Long Growing Guide</h2>
+  <p style="color:var(--txd);font-size:13px">A lazy-but-reasonable maintenance schedule for two raised beds in part shade. Do the bolded tasks, skip the rest if life gets busy. The garden will forgive you.</p>
+</div>
+
+<div class="card">
+  <h2>Ground Rules (Part-Shade Edition)</h2>
+  <div class="gg-rule"><strong>Water:</strong> Shade = slow evaporation. Let the top inch of soil dry between waterings. Stick your finger in — if damp, skip it. Overwatering kills more part-shade gardens than underwatering. When you do water, soak deep, avoid wetting foliage.</div>
+  <div class="gg-rule"><strong>Feed light:</strong> Less sun = slower growth = less demand. One side-dress of compost or balanced fertilizer mid-season is enough. Don't push nitrogen on tomatoes or you'll get jungle with no fruit.</div>
+  <div class="gg-rule"><strong>Harvest often:</strong> Greens that get picked stay productive. Greens that sit bolt. Pick outer leaves of lettuce/kale/chard every few days once they're big enough.</div>
+  <div class="gg-rule"><strong>Slugs are your #1 pest:</strong> Shady + moist = slug paradise. Scatter Sluggo (iron phosphate) around transplants and resow areas. Reapply after rain. That's it — no other pest management is likely needed.</div>
+</div>
+
+<div class="card">
+  <h2>Monthly Schedule</h2>
+
+  <div class="gg-month">
+    <div class="gg-month-hdr" style="background:color-mix(in srgb,var(--bra) 15%,var(--bg2))">
+      Late March
+      <span class="season" style="background:var(--bra);color:var(--bg)">setup</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--bra)">
+      <div class="freq">one-time</div>
+      <strong>Prep beds.</strong> Top-dress each bed with 2-3" of aged compost, work into top 6". Mix in 5 lbs all-purpose fertilizer + 2 lbs greensand per bed. Run a pH test if you bought one (target 6.0-7.0).
+    </div>
+    <div class="gg-task" style="border-color:var(--bra)">
+      <div class="freq">ongoing — daily check</div>
+      <strong>Tend indoor seedlings.</strong> Brassicas + lettuce already started. Lights 2-4" above, 14-16 hrs/day. Bottom-water when blocks feel light. Don't let them dry out, don't let them sit in water.
+    </div>
+    <div class="gg-task" style="border-color:var(--tom)">
+      <div class="freq">Mar 28 – Apr 1</div>
+      <strong>Start tomatoes, chard, parsley indoors.</strong> Same soil block setup. Tomatoes need warmth (70-75°F) to germinate.
+    </div>
+  </div>
+
+  <div class="gg-month">
+    <div class="gg-month-hdr" style="background:color-mix(in srgb,var(--warn) 15%,var(--bg2))">
+      April
+      <span class="season" style="background:var(--warn);color:var(--bg)">build + sow</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--warn)">
+      <div class="freq">Apr 1–15 — one-time</div>
+      <strong>Build groundhog fence.</strong> Non-negotiable before anything goes outside. See Fence Build tab.
+    </div>
+    <div class="gg-task" style="border-color:var(--grn)">
+      <div class="freq">Apr 10–20</div>
+      <strong>Direct sow cool-season crops in Bed 2.</strong> Peas (on trellis, north edge), spinach, arugula, lettuce mix, radishes, beets, carrots (Little Finger), scallions. Water in well, then leave alone — cool soil does the work.
+    </div>
+    <div class="gg-task" style="border-color:var(--hrb)">
+      <div class="freq">Apr 15–20</div>
+      <strong>Start basil indoors.</strong> Needs warmth. Don't rush it outside.
+    </div>
+    <div class="gg-task" style="border-color:var(--bra)">
+      <div class="freq">late Apr</div>
+      <strong>Transplant brassicas + kale + chard to beds.</strong> Harden off for 5-7 days first (set outside in shade a few hours, increase daily). Use row cover if frost threatens. Scatter Sluggo around transplants.
+    </div>
+    <div class="gg-task" style="border-color:var(--txd)">
+      <div class="freq">weekly — 10 min</div>
+      <strong>Walk the beds.</strong> Check soil moisture (finger test). Pull any weeds while they're tiny. Check fence perimeter for dig marks.
+    </div>
+  </div>
+
+  <div class="gg-month">
+    <div class="gg-month-hdr" style="background:color-mix(in srgb,var(--grn) 15%,var(--bg2))">
+      May
+      <span class="season" style="background:var(--grn);color:var(--bg)">transplant + first harvests</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--leg)">
+      <div class="freq">early May</div>
+      <strong>Direct sow bush beans in Bed 1</strong> once soil is 60°F+. Also sow scallions if not done in April.
+    </div>
+    <div class="gg-task" style="border-color:var(--tom)">
+      <div class="freq">May 20–25</div>
+      <strong>Transplant tomatoes + basil to Bed 1.</strong> South edge for tomatoes, 24" apart. Stake or cage immediately — don't wait. Bury tomato stems deep (up to first true leaves). Direct sow cilantro nearby.
+    </div>
+    <div class="gg-task" style="border-color:var(--rt)">
+      <div class="freq">late May</div>
+      <strong>First radish harvest!</strong> Pull at 1" diameter. Resow the empty spot if you want — or just leave it.
+    </div>
+    <div class="gg-task" style="border-color:var(--txd)">
+      <div class="freq">weekly — 15 min</div>
+      <strong>Routine care:</strong> Finger-test water (2x/week in hot spells, less in rain). Harvest baby lettuce/arugula outer leaves. Pull weeds. Check for slug damage on transplants — reapply Sluggo after rain.
+    </div>
+  </div>
+
+  <div class="gg-month">
+    <div class="gg-month-hdr" style="background:color-mix(in srgb,var(--tom) 15%,var(--bg2))">
+      June
+      <span class="season" style="background:var(--tom);color:var(--bg)">growing hard</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--tom)">
+      <div class="freq">every 1-2 weeks</div>
+      <strong>Prune tomato suckers.</strong> Pinch out side shoots in leaf axils to keep plants to 1-2 leaders. This is the single highest-value 5 minutes you'll spend — more fruit, less disease, in part shade. Also remove lowest leaves touching soil.
+    </div>
+    <div class="gg-task" style="border-color:var(--grn)">
+      <div class="freq">early Jun</div>
+      <strong>Resow round 2:</strong> lettuce, arugula, radishes in Bed 2 where spring greens bolted. <span class="lazy">skip-ok — spring sowing still producing?</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--grn)">
+      <div class="freq">ongoing</div>
+      <strong>Harvest greens aggressively.</strong> Lettuce + spinach bolt fast in June heat. Pick everything usable before flower stalks appear. Kale and chard keep going — just harvest outer leaves.
+    </div>
+    <div class="gg-task" style="border-color:var(--bra)">
+      <div class="freq">mid-late Jun</div>
+      <strong>Harvest broccoli main heads.</strong> Cut when florets are tight, before yellowing. Leave the plant — it'll produce side shoots for weeks.
+    </div>
+    <div class="gg-task" style="border-color:var(--txd)">
+      <div class="freq">weekly — 15 min</div>
+      <strong>Routine:</strong> Water deeply 1-2x/week (more in heat waves). Sucker tomatoes. Harvest whatever's ready — beans, greens, radishes. Pull bolted lettuce/spinach.
+    </div>
+  </div>
+
+  <div class="gg-month">
+    <div class="gg-month-hdr" style="background:color-mix(in srgb,var(--tom) 20%,var(--bg2))">
+      July
+      <span class="season" style="background:var(--tom);color:var(--bg)">peak season</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--tom)">
+      <div class="freq">ongoing</div>
+      <strong>Tomato harvest begins!</strong> Cherries (Tiny Tim, Red Cherry, Sungold) ripen first. Pick when fully colored. Keep suckering. In part shade, expect later and slower ripening than packet says.
+    </div>
+    <div class="gg-task" style="border-color:var(--leg)">
+      <div class="freq">mid Jul</div>
+      <strong>Pull spent peas.</strong> They're done. Replant that south-edge Bed 2 space with fall carrots or scallions. <span class="lazy">skip-ok — just mulch the bare spot</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--leg)">
+      <div class="freq">late Jun / early Jul</div>
+      <strong>Resow bush beans round 2.</strong> <span class="lazy">skip-ok if first round is still producing</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--tom)">
+      <div class="freq">once</div>
+      <strong>Side-dress tomatoes</strong> with a handful of compost or balanced fertilizer per plant once they're setting fruit. Don't overdo it.
+    </div>
+    <div class="gg-task" style="border-color:var(--txd)">
+      <div class="freq">weekly — 15 min</div>
+      <strong>Routine:</strong> Water, harvest, sucker tomatoes, pull weeds. Check fence. This is the easy part — everything is growing itself.
+    </div>
+  </div>
+
+  <div class="gg-month">
+    <div class="gg-month-hdr" style="background:color-mix(in srgb,var(--rt) 15%,var(--bg2))">
+      August
+      <span class="season" style="background:var(--rt);color:var(--bg)">harvest + fall prep</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--tom)">
+      <div class="freq">ongoing</div>
+      <strong>Peak tomato harvest.</strong> Check every 2-3 days. Overripe fruit attracts pests. Pick anything showing color — it'll ripen on the counter.
+    </div>
+    <div class="gg-task" style="border-color:var(--bra)">
+      <div class="freq">Aug 1</div>
+      <strong>Start fall brassicas indoors</strong> (kale, broccoli, cabbage). Same soil block method. Transplant late Aug / early Sep. <span class="lazy">skip-ok — ambitious but rewarding</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--grn)">
+      <div class="freq">late Aug</div>
+      <strong>Direct sow fall greens:</strong> spinach, arugula, lettuce, radishes in Bed 2. Shortening days + cooler nights = prime conditions. <span class="lazy">skip-ok — but these are easy wins</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--rt)">
+      <div class="freq">mid-late Aug</div>
+      <strong>Harvest beets and remaining carrots.</strong> Don't leave beets in the ground too long or they get woody.
+    </div>
+    <div class="gg-task" style="border-color:var(--txd)">
+      <div class="freq">weekly — 15 min</div>
+      <strong>Routine:</strong> Water (less as temps cool), harvest, remove spent plants, compost debris.
+    </div>
+  </div>
+
+  <div class="gg-month">
+    <div class="gg-month-hdr" style="background:color-mix(in srgb,var(--ac) 15%,var(--bg2))">
+      September – October
+      <span class="season" style="background:var(--ac);color:var(--bg)">fall harvest + wind down</span>
+    </div>
+    <div class="gg-task" style="border-color:var(--tom)">
+      <div class="freq">before first frost (~Oct 10-15)</div>
+      <strong>Final tomato harvest.</strong> Pick all remaining fruit, even green ones. Green tomatoes ripen in a paper bag on the counter or make fried green tomatoes.
+    </div>
+    <div class="gg-task" style="border-color:var(--grn)">
+      <div class="freq">Sep – Oct</div>
+      <strong>Harvest fall greens.</strong> Spinach, arugula, lettuce, kale all thrive in cool fall weather. Kale gets sweeter after light frost. Row cover extends the season 2-3 weeks.
+    </div>
+    <div class="gg-task" style="border-color:var(--bra)">
+      <div class="freq">Sep</div>
+      <strong>Transplant fall brassicas</strong> if you started them in August. They'll produce into November with row cover.
+    </div>
+    <div class="gg-task" style="border-color:var(--txd)">
+      <div class="freq">late Oct — one-time</div>
+      <strong>Season close-out:</strong> Pull all spent plants. Compost healthy debris (trash anything diseased). Top-dress beds with 1-2" of compost or shredded leaves as winter mulch. Clean and store stakes/cages. Leave fence up — groundhogs don't take winters off.
+    </div>
+  </div>
+
+</div>
+
+<div class="card">
+  <h2>The Lazy Minimum</h2>
+  <p style="color:var(--txd);font-size:13px;line-height:1.7">If you only do five things all season, do these:</p>
+  <div class="gg-rule"><strong>1. Water when dry.</strong> Finger in soil, water if top inch is dry. Deep soak, not a sprinkle. 2x/week in summer, less in rain.</div>
+  <div class="gg-rule"><strong>2. Sucker tomatoes every week or two.</strong> Pinch side shoots. Single biggest return on 5 minutes of effort.</div>
+  <div class="gg-rule"><strong>3. Harvest everything the moment it's ready.</strong> Leaving ripe produce on the plant signals "stop producing." Pick early, pick often.</div>
+  <div class="gg-rule"><strong>4. Scatter Sluggo after rain.</strong> 30 seconds, prevents the most likely pest damage in your shady beds.</div>
+  <div class="gg-rule"><strong>5. Pull weeds while they're small.</strong> One pass a week, 5 minutes. Way easier than dealing with an overgrown bed in July.</div>
+</div>
+</div>
+
 <script>
 // ==================== TAB NAV ====================
 function showPage(id){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('pg-'+id).classList.add('active');
-  document.querySelectorAll('.tab')[['beds','timeline','shop','fence'].indexOf(id)].classList.add('active');
+  document.querySelectorAll('.tab')[['beds','timeline','shop','fence','guide'].indexOf(id)].classList.add('active');
 }
 
 // ==================== BED DETAIL POPUPS ====================

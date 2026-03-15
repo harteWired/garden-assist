@@ -208,27 +208,33 @@ Do this 2-3 weeks before your first outdoor planting (so late March / early Apri
 
 ## Shopping List Summary
 
-**Seeds to buy ASAP (order online or hit a local nursery this weekend):**
-- Kale (Lacinato/Dinosaur or Red Russian)
-- Broccoli (De Cicco or Waltham 29)
-- Cabbage (Early Jersey Wakefield)
-- Cauliflower (Snowball or Amazing)
-- Lettuce mix (mesclun or a cut-and-come-again blend)
-- Spinach (Bloomsdale Long Standing)
-- Arugula
-- Kohlrabi (Early White Vienna)
-- Swiss Chard (Bright Lights or Fordhook Giant)
-- Tomatoes: Sungold, Black Cherry, Stupice (at minimum)
-- Peas (Sugar Snap or Snow)
-- Bush beans (Provider or Contender)
-- Radishes (Cherry Belle or French Breakfast)
-- Beets (Detroit Dark Red or Chioggia)
-- Carrots (Parisian Market, Thumbelina, or Chantenay Red Core)
-- Basil (Genovese)
-- Cilantro
-- Parsley (Italian Flat Leaf)
-- Scallions (Evergreen Hardy White)
-- Cucumber (Marketmore 76 or a pickling variety)
+**Seeds — already have (from seed packs on hand):**
+- [x] Kale, Lacinato — Pack 2
+- [x] Broccoli, Waltham 29 — Pack 2
+- [x] Cabbage, Copenhagen Market / Golden Acre — Pack 1 & 2 (sub for Early Jersey Wakefield; round heads, same maturity)
+- [x] Cauliflower, Snowball — Pack 1 & Pack 2
+- [x] Lettuce mix — DIY blend: Black Seeded Simpson, Oak Leaf, Buttercrunch, Bronze Mignonette (Pack 1) + Green Salad Bowl (Pack 2). Mix all five for cut-and-come-again.
+- [x] Spinach, Bloomsdale Long Standing — Pack 1
+- [x] Arugula — Pack 2
+- [x] Kohlrabi, Purple Vienna — Pack 1 (sub for Early White Vienna; identical except purple skin)
+- [x] Swiss Chard, Ruby Red — Pack 1 (sub for Bright Lights; equally shade-tolerant, red stems only)
+- [x] Tomato, Tiny Tim — Pack 2 (compact determinate cherry, shade-tolerant)
+- [x] Tomato, Red Cherry Large — Pack 1 (cherry type, reasonable for part shade)
+- [x] Radishes, Cherry Belle — Pack 1
+- [x] Radishes, French Breakfast — Pack 1
+- [x] Beets, Early Wonder — Pack 1 (sub for Detroit Dark Red; round shape, great greens)
+- [x] Carrots, Little Finger — Pack 2 (3-4" baby Nantes, best fit for 12" beds)
+- [x] Carrots, Scarlet Nantes — Pack 1 (5-7", secondary pick)
+- [x] Cilantro — Pack 2
+- [x] Cucumber, Marketmore — Pack 1
+
+**Seeds — still need to buy:**
+- [ ] Tomato, Sungold — #1 part-shade cherry performer, buy this
+- [ ] Basil, Genovese — for classic pesto flavor (Large Leaf in Pack 2 is milder, keep as backup)
+- [ ] Peas (Sugar Snap or Snow)
+- [ ] Bush beans (Provider or Contender)
+- [ ] Parsley (Italian Flat Leaf)
+- [ ] Scallions (Evergreen Hardy White)
 
 **Soil block supplies:**
 - Coconut coir bricks (1-2 bricks)

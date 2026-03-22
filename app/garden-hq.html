@@ -771,6 +771,11 @@ const LISTS=[
     {name:'Tomato — Tiny Tim (cherry, shade-tolerant)',detail:'✅ Pack 2',have:true},
     {name:'Tomato — Red Cherry Large',detail:'✅ Pack 1',have:true},
     {name:'Tomato — Sungold F1 (#1 shade cherry)',detail:'BUY'},
+    {name:'Tomato — Black Cherry',detail:'BUY'},
+    {name:'Tomato — Juliet F1',detail:'BUY'},
+    {name:'Tomato — Black Krim',detail:'BUY'},
+    {name:'Tomato — Stupice',detail:'BUY'},
+    {name:'Tomato — Cherokee Purple',detail:'BUY'},
   ]},
   {title:'🥦 Seeds — Brassicas',color:'var(--bra)',items:[
     {name:'Broccoli — Waltham 29',detail:'✅ Pack 2',have:true},
@@ -833,8 +838,22 @@ const STORE_KEY='gardenChecklist2026';
 
 function defaultChecks(){
   const d={};
-  LISTS.forEach((sec,si)=>{sec.items.forEach((item,ii)=>{if(item.have)d[si+'-'+ii]=true;});});
+  LISTS.forEach(sec=>{sec.items.forEach(item=>{if(item.have)d[item.name]=true;});});
   return d;
+}
+function migratePositionalKeys(){
+  try{
+    const s=localStorage.getItem(STORE_KEY);
+    if(!s)return;
+    const state=JSON.parse(s);
+    const keys=Object.keys(state);
+    if(!keys.length||!/^\d+-\d+$/.test(keys[0]))return;
+    const migrated={};
+    LISTS.forEach((sec,si)=>{sec.items.forEach((item,ii)=>{
+      if(state[si+'-'+ii])migrated[item.name]=true;
+    });});
+    localStorage.setItem(STORE_KEY,JSON.stringify(migrated));
+  }catch(e){}
 }
 function loadChecks(){
   try{const s=localStorage.getItem(STORE_KEY);return s?JSON.parse(s):defaultChecks();}catch(e){return defaultChecks();}
@@ -856,12 +875,11 @@ function renderChecklist(){
   LISTS.forEach((sec,si)=>{
     html+=`<div class="cl-section"><h3 style="background:color-mix(in srgb,${sec.color} 15%,var(--bg));border:1px solid color-mix(in srgb,${sec.color} 30%,var(--bd));color:${sec.color}">${sec.title}</h3>`;
     sec.items.forEach((item,ii)=>{
-      const key=si+'-'+ii;
-      const on=!!state[key];
+      const on=!!state[item.name];
       total++;
       if(on)checked++;
-      html+=`<div class="cl-item${on?' checked':''}" id="cli-${key}">
-        <div class="cl-cb${on?' on':''}" onclick="toggleCheck('${key}')"></div>
+      html+=`<div class="cl-item${on?' checked':''}">
+        <div class="cl-cb${on?' on':''}" onclick="toggleCheck(${si},${ii})"></div>
         <div class="cl-name">${item.name}</div>
         <div class="cl-detail">${item.detail}</div>
       </div>`;
@@ -875,14 +893,16 @@ function renderChecklist(){
   document.getElementById('shopBadge').textContent=pct+'%';
 }
 
-function toggleCheck(key){
+function toggleCheck(si,ii){
   const state=loadChecks();
+  const key=LISTS[si].items[ii].name;
   state[key]=!state[key];
   if(!state[key])delete state[key];
   saveChecks(state);
   renderChecklist();
 }
 
+migratePositionalKeys();
 renderChecklist();
 </script>
 </body>

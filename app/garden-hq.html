@@ -165,7 +165,7 @@ p{margin-bottom:8px;line-height:1.65}
     <div class="zone z-shd span4" onclick="showD(1,'flex')"><span class="em">🌱</span><span class="zl">Flex — cilantro / extra lettuce</span></div>
     <div class="zone z-hrb span2" onclick="showD(1,'cilantro')"><span class="em">🌿</span><span class="zl">Cilantro</span></div>
     <div class="zone z-shd span6" onclick="showD(1,'flex')"><span class="em">🌱</span><span class="zl">Flex — open early, shaded by July</span></div>
-    <div class="zone z-tom span2 rspan2" onclick="showD(1,'tinytim')"><span class="em">🍅</span><span class="zl">Tiny Tim</span></div>
+    <div class="zone z-tom span2 rspan2" onclick="showD(1,'sungold')"><span class="em">🍅</span><span class="zl">Sungold</span></div>
     <div class="zone z-tom span2 rspan2" onclick="showD(1,'blkcherry')"><span class="em">🍅</span><span class="zl">Blk Cherry</span></div>
     <div class="zone z-tom span2 rspan2" onclick="showD(1,'juliet')"><span class="em">🍅</span><span class="zl">Juliet</span></div>
     <div class="zone z-tom span2 rspan2" onclick="showD(1,'blkkrim')"><span class="em">🍅</span><span class="zl">Blk Krim</span></div>
@@ -306,7 +306,7 @@ p{margin-bottom:8px;line-height:1.65}
       <tr><td><span class="germ-dot" style="background:var(--grn)"></span>Head Lettuce</td><td>14</td><td>8</td><td>60-70</td><td>3-7</td></tr>
 
       <tr class="whdr"><td colspan="5">Wave 2 — Tomatoes + Friends · Mar 28 - Apr 1 · 34 minis → Tray B</td></tr>
-      <tr><td><span class="germ-dot" style="background:var(--tom)"></span>Tiny Tim</td><td>3</td><td>2</td><td>75-85</td><td>5-10</td></tr>
+      <tr><td><span class="germ-dot" style="background:var(--tom)"></span>Sungold</td><td>3</td><td>2</td><td>75-85</td><td>5-10</td></tr>
       <tr><td><span class="germ-dot" style="background:var(--tom)"></span>Black Cherry</td><td>3</td><td>2</td><td>75-85</td><td>5-10</td></tr>
       <tr><td><span class="germ-dot" style="background:var(--tom)"></span>Juliet</td><td>3</td><td>2</td><td>75-85</td><td>5-10</td></tr>
       <tr><td><span class="germ-dot" style="background:var(--tom)"></span>Black Krim</td><td>3</td><td>2</td><td>75-85</td><td>5-10</td></tr>
@@ -635,7 +635,7 @@ p{margin-bottom:8px;line-height:1.65}
     </div>
     <div class="gg-task" style="border-color:var(--tom)">
       <div class="freq">ongoing</div>
-      <strong>Tomato harvest begins!</strong> Cherries (Tiny Tim, Red Cherry) ripen first. Pick when fully colored. Keep suckering. In part shade, expect later and slower ripening than packet says.
+      <strong>Tomato harvest begins!</strong> Cherries (Tiny Tim, Red Cherry, Sungold) ripen first. Pick when fully colored. Keep suckering. In part shade, expect later and slower ripening than packet says.
     </div>
     <div class="gg-task" style="border-color:var(--leg)">
       <div class="freq">mid Jul</div>
@@ -729,7 +729,7 @@ function showPage(id){
 
 // ==================== BED DETAIL POPUPS ====================
 const D={
-  tinytim:{n:'Tiny Tim Cherry Tomato',v:'Tiny Tim',sp:'18" apart',t:'Indoors Mar 28 → transplant May 20-25',d:'Compact determinate cherry, shade-tolerant. Dwarf plant (12-18"), matures ~55-60 days. Sets and ripens fruit all at once — big advantage in part shade. No staking needed.'},
+  sungold:{n:'Sungold Cherry Tomato',v:'Sungold F1',sp:'24" apart',t:'Indoors Mar 28 → transplant May 20-25',d:'#1 shade pick. Prolific cherry, fast ripener, exceptional sweetness. Prune to 2 leaders, stake vertically. Expect first fruit late July.'},
   blkcherry:{n:'Black Cherry Tomato',v:'Black Cherry',sp:'24" apart',t:'Indoors Mar 28 → transplant May 20-25',d:'High yields in shade. Deep smoky-sweet flavor. Prune to 2 leaders. 75 days (expect 85-90 in shade).'},
   juliet:{n:'Juliet Grape Tomato',v:'Juliet F1',sp:'24" apart',t:'Indoors Mar 28 → transplant May 20-25',d:'Prolific grape/plum hybrid. Strong disease resistance — important in shady, moist conditions. Great for roasting.'},
   blkkrim:{n:'Black Krim Heirloom',v:'Black Krim',sp:'24" apart',t:'Indoors Mar 28 → transplant May 20-25',d:'Russian heirloom. Produces in 4-5hrs sun. Rich, smoky, intense flavor. Your #1 slicer pick. Heavy fruits need strong staking.'},
@@ -770,7 +770,7 @@ const LISTS=[
   {title:'🍅 Seeds — Tomatoes',color:'var(--tom)',items:[
     {name:'Tomato — Tiny Tim (cherry, shade-tolerant)',detail:'✅ Pack 2',have:true},
     {name:'Tomato — Red Cherry Large',detail:'✅ Pack 1',have:true},
-    {name:'Tomato — Tiny Tim (compact cherry, shade-tolerant)',detail:'✅ Pack 2',have:true},
+    {name:'Tomato — Sungold F1 (#1 shade cherry)',detail:'BUY'},
   ]},
   {title:'🥦 Seeds — Brassicas',color:'var(--bra)',items:[
     {name:'Broccoli — Waltham 29',detail:'✅ Pack 2',have:true},

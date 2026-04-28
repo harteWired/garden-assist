@@ -4,7 +4,7 @@ Everything you need to run two raised beds in Zone 6b — bed layouts, planting 
 
 This is a personal garden planning toolkit for Warren County, NJ (2026 season). Two 4×12-foot beds, 12 inches deep, part shade — about 5–6 hours of midday sun. The beds sit in a mixed-shade zone between evergreens and the house, so crop selection leans hard on shade-tolerant varieties.
 
-**[Open the planner →](https://aes87.github.io/garden-assist/app/garden-hq.html)**
+**[Open the planner →](https://harteWired.github.io/garden-assist/app/garden-hq.html)**
 
 ## What It Does
 
